@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 25px;
+	transition: background-color 0.6s, background-size 0.2s;
+    background-position: center;
+    background-size: 0%;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+}
+
+ul li a:hover {
+    color: transparent;
+	background-color: white;
+	background-size: 30%;
+}
+
+ul li:nth-child(1) a:hover {
+	background-image: url("img/css3.png");
+}
+ul li:nth-child(2) a:hover {
+	background-image: url("img/html5.png");
+}
+ul li:nth-child(3) a:hover {
+	background-image: url("img/javascript.png");
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+header h1 {
+	font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+	transition: all 0.5s;
+}
+
+header h1:hover{
+	letter-spacing: 10px;
+	text-shadow: 1px 1px 1px green;
+}
+
+header h2 {
+	color: red;
+	font-size: 16px;
+	margin-bottom: 40px;
+	transition: all 1s;
+}
+
+header h2:hover {
+	color: green;
+}
+
+main {
+    text-align: center;
+}
+
+.box {
+    padding: 20px;
+    display: flex;
+}
+
+.box-cursos {
+    background-color: #ececec;
+    text-align: center;
+    flex-direction: column;
+}
+
+.box-curso {
+    padding: 20px;
+}
+
+.box-cursos h2 {
+    color: green;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.box-curso img {
+    width: 60px;
+}
+
+.box-conteudos {
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-conteudo img {
+    width: 350px;
+    padding: 10px 10px ;
+    align-items: center;
+}
+
+.box-conteudo p {
+    padding: 10px 20px 10px 20px;
+}
+
+.opcional {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    nav ul {
+        text-align: right;
+    }
+    header h1 {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    header h2 {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .box-cursos {
+        flex-direction: row;
+    }
+
+    .box-conteudos {
+        padding: 50px 100px 50px 100px;
+    }
+
+    .box-conteudo {
+        display: flex;
+        padding: 10px;
+    }
+
+    .box-conteudo p {
+        padding: 20px 20px 10px 20px;
+    }
+
+    .opcional {
+        display: inline-block;
+    }
+
+    .img-dois {
+        flex-direction: row-reverse;
+    }
+}
